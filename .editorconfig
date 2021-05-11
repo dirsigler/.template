@@ -1,0 +1,55 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+trim_trailing_whitespace = true
+
+# Terraform
+[*.{tf,tfvars}]
+indent_size = 2
+indent_style = space
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*.{js,py}]
+charset = utf-8
+
+# JSON Files
+[*.{json,json5,webmanifest}]
+indent_size = 2
+
+# Web Files
+[*.{htm,html,js,jsm,ts,tsx,css,sass,scss,less,svg,vue}]
+indent_size = 2
+
+[{go.mod,go.sum,*.go,.gitmodules}]
+indent_style = tab
+indent_size = 4
+
+# 4 space indentation
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Tab indentation (no size specified)
+[Makefile]
+tab_width = 2
+indent_style = tab
+indent_size = 4
+
+# Markdown
+[*.md]
+max_line_length = 0
+trim_trailing_whitespace = false
+
+[Dockerfile]
+indent_size = 4
